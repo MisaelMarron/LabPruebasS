@@ -3,6 +3,7 @@ package lab02.src.main.java.com.miapp;
 import java.util.Scanner;
 
 public class ejer01 {
+    /* 
     public static double solicitarNumero(String nombreVariable, Scanner scanner) {
         double valor;
         while (true) {
@@ -19,11 +20,12 @@ public class ejer01 {
             }
         }
     }
-
+        */
     public static double calcularArea(double base, double altura) {
+        System.out.println("/////PRUEBA///// base: " + base + " altura : "+ altura + " area calculada: " + (base * altura));
         return base * altura;
     }
-
+    /* 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("=== Cálculo del área de un rectángulo ===");
@@ -36,4 +38,5 @@ public class ejer01 {
         System.out.printf("Altura ingresada: %.2f%n", altura);
         System.out.printf("Área del rectángulo: %.2f%n", area);
     }
+        */
 }

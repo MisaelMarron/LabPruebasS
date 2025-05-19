@@ -8,7 +8,8 @@ import org.junit.Test;
 public class ejer01_Test {
     @Test
     public void testCalcularArea() {
-        assertThat(ejer01.calcularArea(5, 3), is(closeTo(15.0, 0.001)));
-        assertThat(ejer01.calcularArea(2.5, 4.2), is(closeTo(10.5, 0.001)));
+        //parte de prueba , cambiar si desea, pero tambien debe cambiar closeTo(que es la respuesta)
+        assertThat("el area del rectangulo con base 5 y altura 3 deberia ser: 15", ejer01.calcularArea(5, 3), is(closeTo(15.0, 0.001)));
+        assertThat("el area del rectangulo con base 2.5 y altura 4.2 deberia ser: 15", ejer01.calcularArea(2.5, 4.2), is(closeTo(10.5, 0.001)));
     }
 }

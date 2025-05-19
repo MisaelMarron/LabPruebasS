@@ -6,9 +6,18 @@ import java.util.Scanner;
 
 public class ejer02 {
     public static boolean esPar(int numero) {
+        System.out.println("////PRUEBA////");
+        
+        if (numero % 2 == 0)
+            System.out.println(numero +" es par");
+    
+        else 
+            System.out.println(numero +" es impar");
+
         return numero % 2 == 0;
     }
 
+    /*
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("=== Identificador de Números Pares e Impares ===");
@@ -47,5 +56,5 @@ public class ejer02 {
             String tipo = esPar(numero) ? "par" : "impar";
             System.out.println("El número " + numero + " es " + tipo);
         }
-    }
+    } */
 }
