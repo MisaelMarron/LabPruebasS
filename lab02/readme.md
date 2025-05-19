@@ -1,7 +1,18 @@
 
-# HOLA JOE SI ESTAS LEYENDO ESTO , TENGO SUEÑOOOOOO
-# para ejecutar necesitas maven 
-# EJECUTA LOS SIGUIENTES CODIGOS:
-# mvn clean compile
-# mvn clean test
-# Podemos apreciar como se mira que de las 7 pruebas realizadas no hay ningun error :D
+# Proyecto de Pruebas Unitarias con Maven
+
+¡Hola Joe! 😴  
+Si estás leyendo esto, probablemente estoy con sueño... pero aquí te explico cómo ejecutar el proyecto.
+
+## Requisitos
+
+- Tener instalado **Maven** en tu sistema.
+- Asegurarse de tener Java instalado y configurado.
+
+## Instrucciones de Ejecución
+
+Desde la terminal, en el directorio raíz del proyecto, ejecuta los siguientes comandos:
+
+```bash
+mvn clean compile
+mvn clean test
