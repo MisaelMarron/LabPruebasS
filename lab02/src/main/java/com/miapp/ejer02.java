@@ -1,9 +1,9 @@
-package lab02.src.main.java.com.miapp;
-
+package com.miapp;
+/* 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+*/
 public class ejer02 {
     public static boolean esPar(int numero) {
         System.out.println("////PRUEBA////");

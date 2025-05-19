@@ -24,5 +24,11 @@
         <scope>test</scope>
     </dependency>
 </dependencies>
+<maven-compiler-plugin>
+  <configuration>
+    <release>8</release> <!-- en vez de source y target -->
+    <encoding>UTF-8</encoding>
+  </configuration>
+</maven-compiler-plugin>
 
 </project>

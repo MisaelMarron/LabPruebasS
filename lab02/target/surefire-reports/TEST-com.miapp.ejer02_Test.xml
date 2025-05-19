@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="lab02.src.test.java.com.miapp.ejer01_Test" time="0.058" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.miapp.ejer02_Test" time="0.01" tests="11" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PE"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\Misael\AppData\Local\Temp\surefire17545263076933155401\surefirebooter-20250519030506725_3.jar C:\Users\Misael\AppData\Local\Temp\surefire17545263076933155401 2025-05-19T03-05-06_618-jvmRun1 surefire-20250519030506725_1tmp surefire_0-20250519030506725_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Misael\AppData\Local\Temp\surefire10789118970416462093\surefirebooter-20250519180426823_3.jar C:\Users\Misael\AppData\Local\Temp\surefire10789118970416462093 2025-05-19T18-04-26_720-jvmRun1 surefire-20250519180426823_1tmp surefire_0-20250519180426823_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Misael\Desktop\LabPruebasS\lab02\target\test-classes;C:\Users\Misael\Desktop\LabPruebasS\lab02\target\classes;C:\Users\Misael\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Misael\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Misael\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Misael\AppData\Local\Temp\surefire17545263076933155401\surefirebooter-20250519030506725_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Misael\AppData\Local\Temp\surefire10789118970416462093\surefirebooter-20250519180426823_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.1+9-30"/>
@@ -58,9 +58,51 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="testCalcularArea" classname="lab02.src.test.java.com.miapp.ejer01_Test" time="0.011">
-    <system-out><![CDATA[/////PRUEBA///// base: 5.0 altura : 3.0 area calculada: 15.0
-/////PRUEBA///// base: 2.5 altura : 4.2 area calculada: 10.5
+  <testcase name="testNumerosMixtos" classname="com.miapp.ejer02_Test" time="0.004">
+    <system-out><![CDATA[////PRUEBA////
+2 es par
+////PRUEBA////
+3 es impar
+////PRUEBA////
+4 es par
 ]]></system-out>
   </testcase>
+  <testcase name="testCantidadCero" classname="com.miapp.ejer02_Test" time="0.0"/>
+  <testcase name="testLetraEnNumero" classname="com.miapp.ejer02_Test" time="0.0"/>
+  <testcase name="testNumerosNegativos" classname="com.miapp.ejer02_Test" time="0.001">
+    <system-out><![CDATA[////PRUEBA////
+-2 es par
+////PRUEBA////
+-5 es impar
+////PRUEBA////
+-7 es impar
+]]></system-out>
+  </testcase>
+  <testcase name="testSoloPares" classname="com.miapp.ejer02_Test" time="0.001">
+    <system-out><![CDATA[////PRUEBA////
+2 es par
+////PRUEBA////
+6 es par
+////PRUEBA////
+8 es par
+]]></system-out>
+  </testcase>
+  <testcase name="testNumeroVacio" classname="com.miapp.ejer02_Test" time="0.0"/>
+  <testcase name="testSoloImpares" classname="com.miapp.ejer02_Test" time="0.002">
+    <system-out><![CDATA[////PRUEBA////
+1 es impar
+////PRUEBA////
+5 es impar
+////PRUEBA////
+9 es impar
+]]></system-out>
+  </testcase>
+  <testcase name="testConCero" classname="com.miapp.ejer02_Test" time="0.0">
+    <system-out><![CDATA[////PRUEBA////
+0 es par
+]]></system-out>
+  </testcase>
+  <testcase name="testCantidadNegativa" classname="com.miapp.ejer02_Test" time="0.0"/>
+  <testcase name="testCantidadVacia" classname="com.miapp.ejer02_Test" time="0.0"/>
+  <testcase name="testLetraEnCantidad" classname="com.miapp.ejer02_Test" time="0.0"/>
 </testsuite>
