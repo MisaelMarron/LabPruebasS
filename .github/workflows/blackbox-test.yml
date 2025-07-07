@@ -1,0 +1,100 @@
+name: Blackbox Automated Test Runner
+
+on:
+  workflow_dispatch:
+    inputs:
+      test_target:
+        description: "Select the test to run"
+        required: true
+        default: "Test All"
+        type: choice
+        options:
+          - Test All
+          - Test RNF01
+          - Test RNF02
+          - Test RNF03
+          - Test RNF04
+          - Test RNF05
+          - Test RNF06
+          - Test RNF07
+          - Test RNF08
+          - Test RNF09
+          - Test RNF10
+          - Test RNF11
+          - Test RNF12
+          - Test RNF13
+          - Test RNF14
+          - Test RNF15
+          - Test RNF16
+          - Test RNF17
+          - Test RNF18
+          - Test RNF19
+          - Test RNF20
+          - Test RNF21
+          # Añadir más aquí: test_fn02, test_fn03, etc.
+      session_token:
+        description: "Session token for authentication"
+        required: false
+        type: string
+
+concurrency:
+  group: blackbox-test-runner
+  cancel-in-progress: true
+
+jobs:
+  run-selected-test:
+    name: Blackbox Test - ${{ github.event.inputs.test_target }} by ${{ github.actor }}
+    runs-on: ubuntu-latest
+
+    environment:
+      test-backbox
+      # URL: ${{ vars.URL }}
+      # TOKEN_NAME: ${{ vars.TOKEN_NAME }}
+      # TOKEN_VALUE pasado por input del usuario
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip" # caching pip dependencies
+
+      #- name: Install Google Chrome
+      #  run: |
+      #    wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+      #    sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+      #    sudo apt-get update
+      #    sudo apt-get install -y google-chrome-stable
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+        working-directory: src/test/selenium
+
+      - name: Run selected test
+        id: run_test
+        env:
+          URL: ${{ vars.URL }}
+          TOKEN_NAME: ${{ vars.TOKEN_NAME }}
+          TOKEN_VALUE: ${{github.event.inputs.session_token || secrets.TOKEN_VALUE }}
+
+        run: |
+          input="${{ github.event.inputs.test_target }}"
+          if [[ "$input" == "Test All" ]]; then
+            python test_all.py
+          elif [[ "$input" =~ ^Test\ RNF([0-9]{2})$ ]]; then
+            num="${BASH_REMATCH[1]}"
+            python "test_fn${num}.py"
+          else
+            echo "Invalid test selected."
+            exit 1
+          fi
+
+        working-directory: src/test/selenium
+        shell: bash
+
+    # Opcional: añadir salida del job
+    #outputs:
+    #  test_target: ${{ github.event.inputs.test_target }}

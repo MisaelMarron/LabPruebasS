@@ -1,0 +1,132 @@
+[
+  {
+    "id": "FN01-CP-001",
+    "fields": {
+      "name": "Juan Perez",
+      "institution": "UNSA",
+      "country": "Perú",
+      "email": "jperez@unsa.pe",
+      "comments": "N/A"
+    },
+    "expected": "Your request has been submitted successfully",
+    "element_locator": "//p[contains(text(), 'Your request has been submitted successfully')]",
+    "Obs": "f+"
+  },
+  {
+    "id": "FN01-CP-002",
+    "fields": {
+      "name": "",
+      "institution": "UNSA",
+      "country": "Perú",
+      "email": "jperez@unsa.pe",
+      "comments": "N/A"
+    },
+    "expected": "Please enter your name",
+    "element_locator": "//div[@role='alert' and @aria-describedby='name-label']",
+    "Obs": "f-"
+  },
+  {
+    "id": "FN01-CP-003",
+    "fields": {
+      "name": "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVW",
+      "institution": "UNSA",
+      "country": "Perú",
+      "email": "jperez@unsa.pe",
+      "comments": "N/A"
+    },
+    "expected": "Name must be shorter than 100 characters",
+    "element_locator": "//div[@role='alert' and @aria-describedby='name-label']",
+    "Obs": "f-"
+  },
+  {
+    "id": "FN01-CP-004",
+    "fields": {
+      "name": "Juan Perez",
+      "institution": "",
+      "country": "Perú",
+      "email": "jperez@unsa.pe",
+      "comments": "N/A"
+    },
+    "expected": "Please enter your institution name",
+    "element_locator": "//div[@role='alert' and @aria-describedby='institution-label']",
+    "Obs": "f-"
+  },
+  {
+    "id": "FN01-CP-005",
+    "fields": {
+      "name": "Juan Perez",
+      "institution": "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHJ",
+      "country": "Perú",
+      "email": "jperez@unsa.pe",
+      "comments": "N/A"
+    },
+    "expected": "Institution name must be shorter than 86 characters",
+    "element_locator": "//div[@role='alert' and @aria-describedby='institution-label']",
+    "Obs": "f-"
+  },
+  {
+    "id": "FN01-CP-006",
+    "fields": {
+      "name": "Juan Perez",
+      "institution": "UNSA",
+      "country": "",
+      "email": "jperez@unsa.pe",
+      "comments": "N/A"
+    },
+    "expected": "Please enter your institution's country",
+    "element_locator": "//div[@role='alert' and @aria-describedby='country-label']",
+    "Obs": "f-"
+  },
+  {
+    "id": "FN01-CP-007",
+    "fields": {
+      "name": "Juan Perez",
+      "institution": "UNSA",
+      "country": "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNO",
+      "email": "jperez@unsa.pe",
+      "comments": "N/A"
+    },
+    "expected": "Country name must be shorter than 40 characters",
+    "element_locator": "//div[@role='alert' and @aria-describedby='country-label']",
+    "Obs": "f-"
+  },
+  {
+    "id": "FN01-CP-008",
+    "fields": {
+      "name": "Juan Perez",
+      "institution": "UNSA",
+      "country": "Perú",
+      "email": "",
+      "comments": "N/A"
+    },
+    "expected": "Please enter your email address",
+    "element_locator": "//div[@role='alert' and @aria-describedby='email-label']",
+    "Obs": "f-"
+  },
+  {
+    "id": "FN01-CP-009",
+    "fields": {
+      "name": "Juan Perez",
+      "institution": "UNSA",
+      "country": "Perú",
+      "email": "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJK@GMAIL.COM",
+      "comments": "N/A"
+    },
+    "expected": "Email address must be shorter than 254 characters",
+    "element_locator": "//div[@role='alert' and @aria-describedby='email-label']",
+    "Obs": "f-"
+  },
+  {
+    "id": "FN01-CP-010",
+    "fields": {
+      "name": "Juan Perez",
+      "institution": "UNSA",
+      "country": "Perú",
+      "email": "jperez@unsa.pe",
+      "comments": "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    },
+    "expected": "Your request has been submitted successfully",
+    "element_locator": "//p[contains(text(), 'Your request has been submitted successfully')]",
+    "Obs": "f+"
+  }
+]

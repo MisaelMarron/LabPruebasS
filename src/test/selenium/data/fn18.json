@@ -1,0 +1,143 @@
+[
+  {
+    "id": "FN18-CP-001",
+    "fields": {
+      "Name": "Carlos Paredes",
+      "Section": "Grupo 1",
+      "Team": "Team A",
+      "Email": "carlos@example.com"
+    },
+    "expected": "Mensaje: Student has been updated",
+    "element_locator": "//*[contains(text(), 'Student has been updated')]",
+    "Obs": "RF-008.2"
+  },
+  {
+    "id": "FN18-CP-002",
+    "fields": {
+      "Name": "",
+      "Section": "Grupo 1",
+      "Team": "Team A",
+      "Email": "carlos@example.com"
+    },
+    "expected": "Mensaje: The field 'Student Name' should not be empty.",
+    "element_locator": "//*[contains(text(), 'Student Name') and contains(text(),'should not be empty')]",
+    "Obs": "RF-008.2"
+  },
+  {
+    "id": "FN18-CP-003",
+    "fields": {
+      "Name": "Carlos Paredes",
+      "Section": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+      "Team": "Team A",
+      "Email": "carlos@example.com"
+    },
+    "expected": "Mensaje: The field 'Section Name' should not exceed 60 characters.",
+    "element_locator": "//*[contains(text(), 'Section Name') and contains(text(),'60 characters')]",
+    "Obs": "RF-008.2"
+  },
+  {
+    "id": "FN18-CP-004",
+    "fields": {
+      "Name": "Carlos Paredes",
+      "Section": "Grupo 1",
+      "Team": "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT",
+      "Email": "carlos@example.com"
+    },
+    "expected": "Mensaje: The field 'Team Name' should not exceed 60 characters.",
+    "element_locator": "//*[contains(text(), 'Team Name') and contains(text(),'60 characters')]",
+    "Obs": "RF-008.2"
+  },
+  {
+    "id": "FN18-CP-005",
+    "fields": {
+      "Name": "Pedrito Suarez",
+      "Section": "A1",
+      "Team": "Grupo1",
+      "Email": "juan.com"
+    },
+    "expected": "Mensaje: is not acceptable to TEAMMATES",
+    "element_locator": "//*[contains(text(), 'not acceptable to TEAMMATES')]",
+    "Obs": "RF-008.2"
+  },
+  {
+    "id": "FN18-CP-006",
+    "fields": {
+      "Name": "Pedrito Suarez",
+      "Section": "A1",
+      "Team": "Grupo1",
+      "Email": "carlos@example.com"
+    },
+    "expected": "Mensaje: Trying to update to an email that is already in use",
+    "element_locator": "//*[contains(text(), 'Trying to update')]",
+    "Obs": "RF-008.2"
+  },
+  {
+    "id": "FN18-CP-007",
+    "fields": {
+      "Name": "A",
+      "Section": "S",
+      "Team": "T",
+      "Email": "c@b.co"
+    },
+    "expected": "Mensaje: Student has been updated and email sent",
+    "element_locator": "//*[contains(text(), 'Student has been updated') and contains(text(),'email sent')]",
+    "Obs": "RF-008.2"
+  },
+  {
+    "id": "FN18-CP-008",
+    "fields": {
+      "Name": "NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+      "Section": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+      "Team": "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT",
+      "Email": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@ex.com"
+    },
+    "expected": "Mensaje: Student has been updated and email sent",
+    "element_locator": "//*[contains(text(), 'Student has been updated') and contains(text(),'email sent')]",
+    "Obs": "RF-008.2"
+  },
+  {
+    "id": "FN18-CP-009",
+    "fields": {
+      "Name": "NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+      "Section": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+      "Team": "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT",
+      "Email": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx@x.com"
+    },
+    "expected": "Mensaje: Campos exceden límites",
+    "element_locator": "//*[contains(text(), 'should not exceed')]",
+    "Obs": "RF-008.2"
+  },
+  {
+    "id": "FN18-CP-010",
+    "fields": {
+      "Name": "Soy un nombre normal",
+      "Section": "Una seccion normal",
+      "Team": "Un equipo normal",
+      "Email": "Un_correo@normal.com",
+      "Comments": ""
+    },
+    "expected": "Mensaje: Student has been updated and email sent",
+    "element_locator": "//*[contains(text(), 'Student has been updated') and contains(text(),'email sent')]",
+    "Obs": "RF-008.2"
+  },
+  {
+    "id": "FN18-CP-011",
+    "fields": {
+      "Name": "Soy un nombre normal",
+      "Section": "Una seccion normal",
+      "Team": "Un equipo normal",
+      "Email": "Un_correo@normal.com",
+      "Comments": "Participa con frecuencia en clase"
+    },
+    "expected": "Mensaje: Student has been updated and email sent",
+    "element_locator": "//*[contains(text(), 'Student has been updated') and contains(text(),'email sent')]",
+    "Obs": "RF-008.2"
+  },
+  {
+    "id": "FN18-CP-012",
+    "fields": {},
+    "expected": "Mensaje: Student has been updated",
+    "element_locator": "//*[contains(text(), 'Student has been updated')]",
+    "Obs": "RF-008.2"
+  }
+]

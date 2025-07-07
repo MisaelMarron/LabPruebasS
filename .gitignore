@@ -1,0 +1,162 @@
+.DS_Store
+*.orig
+*.class
+*.jar
+*.ext
+*.bin
+*.bak
+*.db
+*.exe
+
+# Node.js
+node_modules/
+npm-debug.log
+coverage/*
+.eslintcache
+.stylelintcache
+
+# Gradle
+.gradle
+build/
+bin/
+!gradle-wrapper.jar
+
+# Eclipse
+.classpath
+.project
+.settings
+.launches
+test-output/*
+.checkstyle
+.eclipse-pmd
+.tern-project
+
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# VSCode
+.vscode/
+*.code-workspace
+.history/
+
+# Netbeans
+nbproject/
+nbbuild/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# JMeter
+jmeter.log
+src/lnp/resources/data/*
+src/lnp/resources/results/*
+src/lnp/resources/tests/*
+!src/lnp/resources/jmeter/bin
+
+# Angular
+.angular/cache
+
+# TEAMMATES
+gradle.properties
+build.properties
+build-dev.properties
+test.properties
+client.properties
+config.ts
+app.yaml
+geckodriver*
+chromedriver*
+api-output.ts
+api-request.ts
+api-const.ts
+src/main/resources/firebase-credentials.json
+src/client/java/teammates/client/scripts/statistics/data/
+src/client/java/teammates/client/scripts/log/
+src/e2e/resources/gmail-api/
+src/e2e/resources/downloads/
+src/web/dist/*
+src/web/webtools/*
+filestorage-dev/*
+datastore-dev/datastore/*
+postgres-data/
+
+!.gitkeep
+
+
+# Docs
+docs/_site/*
+docs/_markbind/logs/*
+.stylelintcache
+.eslintcache
+
+
+# Python
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+.env/
+.env.*
+.env
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de Python compilados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de logs
+*.log
+
+# Archivos de dependencias
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Configuración de editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de test / cobertura
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+.cache
+.pytest_cache/
+nosetests.xml
+test-results/
+
+# Documentación
+/build/
+dist/
+*.egg-info/
+.eggs/
+
+# Bases de datos locales o temporales
+*.sqlite3
+*.db
+
+# Archivos de Jupyter Notebook
+.ipynb_checkpoints/
+
+# Otros archivos que no deberían subirse
+*.bak
+*.swp
+
+# venv python virtual environment
+venv/
+env/
+.venv/
+.env/
+.env.*
+.env
+
